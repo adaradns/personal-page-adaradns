@@ -7,7 +7,7 @@ const LINES = [
 
 export default function TerminalBlock() {
   return (
-    <div className="brutal-border brutal-shadow bg-black max-w-2xl w-full">
+    <div className="max-w-2xl w-full border-3 border-brand-mid shadow-brutal bg-black">
       <div className="flex items-center gap-2 px-4 py-3 border-b-3 border-black bg-brand-dark">
         <span className="w-3 h-3 bg-red-500 brutal-border border-black block" />
         <span className="w-3 h-3 bg-brand-accent brutal-border border-black block" />

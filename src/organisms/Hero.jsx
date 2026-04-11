@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="min-h-screen flex items-center pt-16 section-padding bg-white"
+      className="min-h-screen flex items-center pt-16 section-padding bg-white dark:bg-night-bg"
       aria-label="Seccion de inicio"
     >
       <div className="container-max w-full">
@@ -17,9 +17,9 @@ export default function Hero() {
             </span>
           </div>
 
-          <h1 className="font-heading font-700 text-6xl sm:text-7xl md:text-8xl lg:text-9xl uppercase leading-none tracking-tighter text-black mb-6">
+          <h1 className="font-heading font-700 text-6xl sm:text-7xl md:text-8xl lg:text-9xl uppercase leading-none tracking-tighter text-black dark:text-white mb-6">
             Hola,<br />
-            <span className="text-brand-dark">soy Adara</span>
+            <span className="text-brand-mid">soy Adara</span>
           </h1>
 
           <div className="mb-10">
@@ -30,7 +30,7 @@ export default function Hero() {
             <Button href="#proyectos" variant="primary" size="lg">
               Ver Proyectos
             </Button>
-            <Button href="#contacto" variant="secondary" size="lg">
+            <Button href="#contacto" variant="pink" size="lg">
               Contactame
             </Button>
           </div>
@@ -41,7 +41,7 @@ export default function Hero() {
               className="text-brand-dark animate-bounce"
               aria-hidden="true"
             />
-            <span className="font-heading text-sm uppercase tracking-widest text-gray-500">
+            <span className="font-heading text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400">
               Scroll para explorar
             </span>
           </div>

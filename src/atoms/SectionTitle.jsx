@@ -3,7 +3,7 @@ export default function SectionTitle({ children, subtitle, accent = false, class
     <div className={`mb-12 ${className}`}>
       <h2
         className={`font-heading text-4xl md:text-5xl font-700 uppercase leading-none tracking-tight ${
-          accent ? 'text-brand-accent' : 'text-black'
+          accent ? 'text-brand-accent' : 'text-black dark:text-white'
         }`}
       >
         {children}

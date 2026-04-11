@@ -3,7 +3,7 @@ import Button from '../atoms/Button'
 
 export default function ProjectCard({ title, description, image, demoUrl, githubUrl, stack = [] }) {
   return (
-    <article className="brutal-border brutal-shadow bg-white flex flex-col h-full brutal-hover">
+    <article className="brutal-border brutal-shadow bg-white dark:bg-night-card flex flex-col h-full brutal-hover">
       <div className="w-full h-48 bg-brand-mid brutal-border border-b-0 overflow-hidden flex items-center justify-center relative">
         {image ? (
           <img
@@ -33,8 +33,8 @@ export default function ProjectCard({ title, description, image, demoUrl, github
         )}
       </div>
       <div className="p-6 flex flex-col flex-1 gap-4">
-        <h3 className="font-heading font-700 text-xl uppercase">{title}</h3>
-        <p className="font-body text-gray-700 text-sm leading-relaxed flex-1">{description}</p>
+        <h3 className="font-heading font-700 text-xl uppercase dark:text-white">{title}</h3>
+        <p className="font-body text-gray-700 dark:text-gray-300 text-sm leading-relaxed flex-1">{description}</p>
         <div className="flex gap-3 flex-wrap">
           <Button
             href={demoUrl}

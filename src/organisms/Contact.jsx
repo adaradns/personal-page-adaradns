@@ -121,12 +121,12 @@ export default function Contact() {
             ))}
           </div>
 
-          <div className="brutal-border border-white brutal-shadow-white bg-white p-6 md:p-8">
+          <div className="brutal-border border-white brutal-shadow-white bg-white dark:bg-night-card p-6 md:p-8">
             {status === 'success' ? (
               <div className="flex flex-col items-center gap-4 py-8 text-center">
-                <CheckCircle size={48} className="text-brand-dark" aria-hidden="true" />
-                <p className="font-heading font-700 text-xl uppercase">Mensaje enviado</p>
-                <p className="font-body text-gray-600">Te respondo a la brevedad.</p>
+                <CheckCircle size={48} className="text-brand-light" aria-hidden="true" />
+                <p className="font-heading text-gray-500 font-700 text-xl uppercase">Mensaje enviado</p>
+                <p className="font-body text-gray-500 dark:text-gray-300">En cuanto lo vea te respondo.</p>
                 <Button onClick={() => setStatus(null)} variant="secondary" size="md">
                   Enviar otro
                 </Button>
@@ -135,7 +135,7 @@ export default function Contact() {
               <div className="flex flex-col items-center gap-4 py-8 text-center">
                 <AlertCircle size={48} className="text-red-600" aria-hidden="true" />
                 <p className="font-heading font-700 text-xl uppercase">Algo salio mal</p>
-                <p className="font-body text-gray-600">Intenta de nuevo o escribime directamente a codeaseguro@gmail.com</p>
+                <p className="font-body text-gray-600 dark:text-gray-300">Intenta de nuevo o escribime directamente a codeaseguro@gmail.com</p>
                 <Button onClick={() => setStatus(null)} variant="outline" size="md">
                   Reintentar
                 </Button>
@@ -146,7 +146,7 @@ export default function Contact() {
                   <div>
                     <label
                       htmlFor="contact-name"
-                      className="block font-heading font-700 text-sm uppercase tracking-wide mb-2"
+                      className="block font-heading font-700 text-sm uppercase tracking-wide mb-2 dark:text-white"
                     >
                       Nombre
                     </label>
@@ -158,7 +158,7 @@ export default function Contact() {
                       onChange={handleChange}
                       maxLength={80}
                       autoComplete="name"
-                      className={`w-full brutal-border px-4 py-3 font-body text-base focus:outline-none focus:ring-2 focus:ring-brand-dark ${
+                      className={`w-full brutal-border px-4 py-3 font-body text-base dark:text-white dark:bg-night-bg focus:outline-none focus:ring-2 focus:ring-brand-dark ${
                         errors.name ? 'border-red-600' : ''
                       }`}
                       aria-describedby={errors.name ? 'error-name' : undefined}
@@ -175,7 +175,7 @@ export default function Contact() {
                   <div>
                     <label
                       htmlFor="contact-email"
-                      className="block font-heading font-700 text-sm uppercase tracking-wide mb-2"
+                      className="block font-heading font-700 text-sm uppercase tracking-wide mb-2 dark:text-white"
                     >
                       Email
                     </label>
@@ -187,7 +187,7 @@ export default function Contact() {
                       onChange={handleChange}
                       maxLength={120}
                       autoComplete="email"
-                      className={`w-full brutal-border px-4 py-3 font-body text-base focus:outline-none focus:ring-2 focus:ring-brand-dark ${
+                      className={`w-full brutal-border px-4 py-3 font-body text-base dark:text-white dark:bg-night-bg focus:outline-none focus:ring-2 focus:ring-brand-dark ${
                         errors.email ? 'border-red-600' : ''
                       }`}
                       aria-describedby={errors.email ? 'error-email' : undefined}
@@ -204,7 +204,7 @@ export default function Contact() {
                   <div>
                     <label
                       htmlFor="contact-message"
-                      className="block font-heading font-700 text-sm uppercase tracking-wide mb-2"
+                      className="block font-heading font-700 text-sm uppercase tracking-wide mb-2 dark:text-white"
                     >
                       Mensaje
                     </label>
@@ -215,7 +215,7 @@ export default function Contact() {
                       onChange={handleChange}
                       maxLength={1000}
                       rows={5}
-                      className={`w-full brutal-border px-4 py-3 font-body text-base focus:outline-none focus:ring-2 focus:ring-brand-dark resize-none ${
+                      className={`w-full brutal-border px-4 py-3 font-body text-base dark:text-white dark:bg-night-bg focus:outline-none focus:ring-2 focus:ring-brand-dark resize-none ${
                         errors.message ? 'border-red-600' : ''
                       }`}
                       aria-describedby={errors.message ? 'error-message' : undefined}

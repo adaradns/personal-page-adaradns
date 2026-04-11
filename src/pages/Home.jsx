@@ -5,9 +5,9 @@ import Projects from '../organisms/Projects'
 import Skills from '../organisms/Skills'
 import Contact from '../organisms/Contact'
 
-export default function Home() {
+export default function Home({ dark, onToggleTheme }) {
   return (
-    <MainLayout>
+    <MainLayout dark={dark} onToggleTheme={onToggleTheme}>
       <Hero />
       <About />
       <Projects />

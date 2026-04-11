@@ -1,5 +1,7 @@
+import useTheme from './hooks/useTheme'
 import Home from './pages/Home'
 
 export default function App() {
-  return <Home />
+  const { dark, toggle } = useTheme()
+  return <Home dark={dark} onToggleTheme={toggle} />
 }

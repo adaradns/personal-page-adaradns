@@ -3,6 +3,7 @@ const variants = {
   secondary: 'bg-brand-dark text-brand-accent hover:bg-black',
   outline: 'bg-transparent text-black hover:bg-brand-dark hover:text-white',
   ghost: 'bg-white text-black hover:bg-brand-accent',
+  pink: 'bg-brand-light text-white hover:bg-black hover:text-brand-light',
 }
 
 const sizes = {

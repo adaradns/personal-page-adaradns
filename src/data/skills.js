@@ -14,7 +14,7 @@ export const skillCategories = [
   {
     id: 'databases',
     label: 'Base de Datos',
-    color: 'bg-brand-light',
+    color: 'bg-brand-mid',
     skills: ['MongoDB', 'PostgreSQL', 'Firestore', 'SQLite', 'MySQL'],
   },
   {

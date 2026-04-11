@@ -6,7 +6,7 @@ export default function Skills() {
   return (
     <section
       id="habilidades"
-      className="section-padding bg-white"
+      className="section-padding bg-white dark:bg-night-bg"
       aria-label="Seccion de habilidades"
     >
       <div className="container-max">

@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section
       id="proyectos"
-      className="section-padding bg-brand-accent"
+      className="section-padding bg-brand-accent dark:bg-night-bg"
       aria-label="Seccion de proyectos destacados"
     >
       <div className="container-max">

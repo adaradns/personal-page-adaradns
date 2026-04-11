@@ -3,10 +3,10 @@ import Tag from '../atoms/Tag'
 
 export default function SkillCategory({ label, skills, color, subcategories = [] }) {
   return (
-    <div className="brutal-border brutal-shadow bg-white p-5 brutal-hover">
-      <div className="flex items-center gap-2 mb-4 pb-3 border-b-2 border-black">
+    <div className="brutal-border brutal-shadow bg-white dark:bg-night-card p-5 brutal-hover">
+      <div className="flex items-center gap-2 mb-4 pb-3 border-b-2 border-black dark:border-gray-600">
         <ChevronRight size={18} className="text-brand-accent flex-shrink-0" aria-hidden="true" />
-        <h3 className="font-heading font-700 text-base uppercase tracking-wide">{label}</h3>
+        <h3 className="font-heading font-700 text-base uppercase tracking-wide dark:text-white">{label}</h3>
       </div>
 
       <div className="flex flex-wrap gap-2">
@@ -18,10 +18,10 @@ export default function SkillCategory({ label, skills, color, subcategories = []
       </div>
 
       {subcategories.map((sub) => (
-        <div key={sub.label} className="mt-4 pt-4 border-t-2 border-dashed border-gray-200">
+        <div key={sub.label} className="mt-4 pt-4 border-t-2 border-dashed border-gray-200 dark:border-gray-600">
           <div className="flex items-center gap-1 mb-2">
             <ChevronRight size={14} className="text-brand-mid flex-shrink-0" aria-hidden="true" />
-            <span className="font-heading font-700 text-xs uppercase tracking-wide text-gray-500">
+            <span className="font-heading font-700 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
               {sub.label}
             </span>
           </div>
