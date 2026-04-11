@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.env.local
+.env.production
+.env.example
+.DS_Store
+CLAUDE.md
+skill-personal-page.md
+assets/
