@@ -10,7 +10,7 @@ export default function Home({ dark, onToggleTheme }) {
     <MainLayout dark={dark} onToggleTheme={onToggleTheme}>
       <Hero />
       <About />
-      <Projects />
+      {/* <Projects /> */}
       <Skills />
       <Contact />
     </MainLayout>
