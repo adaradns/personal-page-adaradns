@@ -110,11 +110,7 @@ export default function Contact() {
               {' '}o queres aprender algo tambien.{' '}
               Si te interesa mi{' '}
               <span className="text-brand-accent font-600">perfil como profesional</span>
-              , tambien hablame, seguramente algo pueda aportar, pero{' '}
-              <span className="text-brand-light font-600">no esperes mucho</span>
-              {' '}por que realmente{' '}
-              <span className="text-brand-light font-600">no tengo tiempo</span>
-              {' '}en este momento.
+              , tambien hablame, seguramente algo pueda aportar.
             </p>
             {contactLinks.map((link) => (
               <ContactLink key={link.href} {...link} />
